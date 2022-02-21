@@ -13,7 +13,7 @@ export default class RacingResultView extends View {
   winnersAlertMessage(winners) {
     setTimeout(() => {
       this.alertMessage(
-        `${winners.join(DELIMETER.COMMA)}` + WINNER_MESSAGE.CELEBRATION
+        `${winners.join(DELIMETER.COMMA)} ${WINNER_MESSAGE.CELEBRATION}`
       );
     }, DELAY_TIME.WINNER_ALERT);
   }
